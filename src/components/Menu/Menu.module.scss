@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  gap: 20px;
+  color: gray;
+
+  > li {
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: #040404;
+    }
+  }
+}

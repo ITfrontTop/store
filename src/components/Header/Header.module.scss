@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  .leftPartHeader {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .rightPartHeader {
+    display: flex;
+    gap: 30px;
+  }
+}
