@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import data from './../../data/data';
+import { slideInfo } from './../../data/data';
 import styles from './Slider.module.scss';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
+import Button from '../../ui/Button/Button';
 
 const Slider = () => {
   let [position, setPosition] = useState(0);
@@ -18,11 +19,20 @@ const Slider = () => {
   return (
     <section className={styles.section}>
       <div className={styles.slider}>
-        {data.map((person, personIndex) => {
-          const { id, image, name, title, option, description, background } =
-            person;
+        {slideInfo.map((slide, slideIndex) => {
+          const {
+            id,
+            image,
+            name,
+            title,
+            option,
+            description,
+            background,
+            backgroundColorButton,
+            colorText
+          } = slide;
 
-          if (position === personIndex) {
+          if (position === slideIndex) {
             return (
               <div
                 className={styles.slide}
@@ -34,7 +44,12 @@ const Slider = () => {
                   <p className={styles.title}>{title}</p>
                   <h4 className={styles.name}>{name}</h4>
                   <p className={styles.option}>{option}</p>
-                  <div>Shop By Category</div>
+                  <Button
+                    backgroundColorButton={backgroundColorButton}
+                    colorText={colorText}
+                  >
+                    Shop By Category
+                  </Button>
                 </div>
 
                 <div className={styles.description}>
@@ -59,7 +74,7 @@ const Slider = () => {
           <button
             className={styles.next}
             onClick={plusPosition}
-            disabled={position === data.length - 1}
+            disabled={position === slideInfo.length - 1}
           >
             <FaArrowAltCircleRight size={'20px'} />
           </button>
