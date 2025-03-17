@@ -1,19 +1,51 @@
 import styles from './Tile.module.scss';
 import { itemsTile } from '../../data/data';
+import Button from '../../ui/Button/Button';
 
 const Tile = () => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.first}></div>
-      <div className={styles.second}></div>
-      <div className={styles.third}></div>
-      <div className={styles.fourth}></div>
-      <div className={styles.fifth}></div>
-      <div className={styles.sixth}></div> */}
-      {itemsTile.map((item, itemIndex) => {
-        const { id, background } = item;
-        return <div key={id} style={{ background: `${background}` }}></div>;
-      })}
+      {itemsTile.map(
+        ({
+          id,
+          image,
+          title,
+          name,
+          option,
+          background,
+          colorText,
+          backgroundColorButton
+        }) => {
+          // const {
+          //   id,
+          //   image,
+          //   title,
+          //   name,
+          //   option,
+          //   background,
+          //   colorText,
+          //   backgroundColorButton
+          // } = item;
+          return (
+            <div
+              className={styles.item}
+              key={id}
+              style={{ background: `${background}` }}
+            >
+              <img className={styles.image} src={image} alt={option} />
+              <div className={styles.title}>{title}</div>
+              <div className={styles.name}>{name}</div>
+              <div className={styles.option}>{option}</div>
+              <Button
+                colorText={colorText}
+                backgroundColorButton={backgroundColorButton}
+              >
+                Browse
+              </Button>
+            </div>
+          );
+        }
+      )}
     </div>
   );
 };

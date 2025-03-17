@@ -53,73 +53,61 @@ export const slideInfo = [
 export const itemsTile = [
   {
     id: 5,
-    image: '/slider-image/headphone.png',
-    title: 'Beats Solo',
-    name: 'Wireless',
-    option: 'headphone',
-    description:
-      'AirPods Max deliver high-quality, high-fidelity sound for an unparalleled listening experience.',
+    image: '/tile-image/sony-headphone.png',
+    title: 'Enjoy',
+    name: 'With',
+    option: 'Earphone',
     background: 'linear-gradient(to bottom right,#222222,#393939)',
-    backgroundColorButton: '#fff',
-    colorText: '#147bfe'
+    backgroundColorButton: '#f12e36',
+    colorText: '#fff'
   },
   {
     id: 6,
-    image: '/slider-image/headphone.png',
-    title: 'Beats Solo',
-    name: 'Wireless',
-    option: 'headphone',
-    description:
-      'AirPods Max deliver high-quality, high-fidelity sound for an unparalleled listening experience.',
+    image: '/tile-image/watch.png',
+    title: 'New',
+    name: 'Wear',
+    option: 'gadget',
     background: 'linear-gradient(to bottom right,#ffc526,#fdc72f)',
     backgroundColorButton: '#fff',
-    colorText: '#147bfe'
+    colorText: '#fdc72f'
   },
   {
     id: 7,
-    image: '/slider-image/headphone.png',
-    title: 'Beats Solo',
-    name: 'Wireless',
-    option: 'headphone',
-    description:
-      'AirPods Max deliver high-quality, high-fidelity sound for an unparalleled listening experience.',
+    image: '/tile-image/notebook.png',
+    title: 'Trend',
+    name: 'Devices',
+    option: 'Laptop',
     background: 'linear-gradient(to bottom right,#f12e36,#fc4c59)',
     backgroundColorButton: '#fff',
-    colorText: '#147bfe'
+    colorText: '#f12e36'
   },
   {
     id: 8,
-    image: '/slider-image/headphone.png',
-    title: 'Beats Solo',
-    name: 'Wireless',
-    option: 'headphone',
-    description:
-      'AirPods Max deliver high-quality, high-fidelity sound for an unparalleled listening experience.',
+    image: '/tile-image/ps5.png',
+    title: 'Best',
+    name: 'Gaming',
+    option: 'Console',
     background:
       'linear-gradient(to bottom right,rgb(190, 190, 190),rgb(255, 251, 251))',
-    backgroundColorButton: '#fff',
-    colorText: '#147bfe'
+    backgroundColorButton: '#f12e36',
+    colorText: '#fff'
   },
   {
     id: 9,
-    image: '/slider-image/headphone.png',
-    title: 'Beats Solo',
-    name: 'Wireless',
-    option: 'headphone',
-    description:
-      'AirPods Max deliver high-quality, high-fidelity sound for an unparalleled listening experience.',
+    image: '/tile-image/oculus.png',
+    title: 'Play',
+    name: 'Game',
+    option: 'Oculus',
     background: 'linear-gradient(to bottom right,#29ce70,#29d16f)',
     backgroundColorButton: '#fff',
-    colorText: '#147bfe'
+    colorText: '#29ce70'
   },
   {
     id: 10,
-    image: '/slider-image/headphone.png',
-    title: 'Beats Solo',
-    name: 'Wireless',
-    option: 'headphone',
-    description:
-      'AirPods Max deliver high-quality, high-fidelity sound for an unparalleled listening experience.',
+    image: '/tile-image/speaker.png',
+    title: 'New',
+    name: 'Amazon',
+    option: 'Speaker',
     background: 'linear-gradient(to bottom right,#147bfe,#1890fe)',
     backgroundColorButton: '#fff',
     colorText: '#147bfe'
