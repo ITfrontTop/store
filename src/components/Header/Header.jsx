@@ -1,7 +1,7 @@
 import styles from './Header.module.scss';
 
 import Logo from '../Logo/Logo';
-import Menu from '../Menu/menu';
+import Navbar from '../Navbar/Navbar';
 import Auth from '../Auth/Auth';
 import Search from '../Search/Search';
 import Cart from '../Cart/Cart';
@@ -11,7 +11,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.leftPartHeader}>
         <Logo />
-        <Menu />
+        <Navbar />
       </div>
 
       <div className={styles.rightPartHeader}>
